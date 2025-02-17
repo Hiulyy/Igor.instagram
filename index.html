@@ -1,72 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Cadastre-Se Instagram</title>
+    <title>Página Perfil</title>
 </head>
 <body>
-    <section>
-        <header>
-            <img src="Instagram-Logo-2016-present.png" alt="image" class="logo-instagram">
-            <h3 class="subtitulo-1">Cadastre-se para ver fotos e vídeos <br>dos seus amigos.</h3>
-            <button class="botao-1"><img src="facer-removebg-preview.png" alt="image" class="logo-facebook">Entrar com o Facebook</button>
-            <div class="barra-1"></div> 
-            <h4>OU</h4> 
-            <div class="barra-2"></div>
-        </header>
-
-        <main>
-            <div class="box-1">
-                <input type="text" placeholder="Número do celular ou email" id="celular-ou-email">
-                <label for="celular-ou-email"></label>
-            </div>
-            
-            <div class="box-2">
-                <input type="password" placeholder="Senha" id="senha">
-                <label for="senha"></label>
-            </div>
-
-            <div class="box-3">
-                <input type="text" placeholder="Nome completo" id="nome-completo">
-                <label for="nome-completo"></label>
-            </div>
-
-            <div class="box-4">
-                <input type="text" placeholder="Nome de Usuário" id="nome-de-usuario">
-                <label for="nome-de-usuario"></label>
-            </div>
-
-            <h3 class="subtitulo-2">As pessoas que usam nosso serviço podem ter <br> enviado suas informações de contato para o <br> Instagram. <a href="">Saiba mais</a></h3>
-
-        </main>
-
-        <footer>
-            <h3 class="subtitulo-3">Ao se cadastrar, você concorda com nossos <br> <a href="">Termos</a>, <a href="">Política de Privacidade</a> e <a href="">Política de <br>Cookies.</a></h3>
-            <button class="botao-2">Cadastre-se</button>
-        </footer>
-    </section>
-
-   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const botaoCadastro = document.querySelector(".botao-2");
-    
-    botaoCadastro.addEventListener("click", function (event) {
-        event.preventDefault(); 
-        
-        const celularOuEmail = document.getElementById("celular-ou-email").value.trim();
-        const senha = document.getElementById("senha").value.trim();
-        const nomeCompleto = document.getElementById("nome-completo").value.trim();
-        const nomeUsuario = document.getElementById("nome-de-usuario").value.trim();
-        
-        if (celularOuEmail === "" || senha === "" || nomeCompleto === "" || nomeUsuario === "") {
-            alert("Por favor, preencha todos os campos antes de continuar.");
-        } else {
-            window.location.href = "boasvindas.html"; 
-        }
-    });
-});
-   </script>
+    <header>
+        <h1>Perfil do Usuário</h1>
+    </header>
+    <main>
+    <img class="img-lana" src="images.jpg" alt="Imagem da Lana Del Rey">
+    <h4>Lana Del Rey</h4>
+    <q>Lana Del Rey, é uma cantora, compositora, modelo e poetisa norte-americana.</q>
+    <ul>
+        <li>Canta Salvatore</li>
+        <li>Canta Doin Time</li>
+        <li>Canta Summertime Sadness</li>
+    </ul>
+    <button class ="modo-claro" onclick="modoEscuro()">Ativar Modo Escuro</button>
+    </main>
+    <footer>
+        <p>© 2023 Rede Social</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

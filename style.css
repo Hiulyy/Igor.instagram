@@ -1,124 +1,43 @@
 body{
-    justify-content: center;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #D9C9BA;
 }
 
-.logo-instagram{
-    width: 180px;
-    
+
+.img-lana{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
 
-header,main,footer{
+header, footer{
+    background-color: #8C694A;
+    color: #590202;
+    text-align: center;
+}
+
+main{
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.barra-1{
-    height: 0.5px;
-    width: 100px;
-    background-color: rgb(185, 185, 185);
-    position: relative;
-    right: 80px;
-    top: 30px;
-}
-
-.barra-2{
-    height: 0.5px;
-    width: 100px;
-    background-color: rgb(185, 185, 185);
-    position: relative;
-    left: 80px;
-    bottom: 31px;
-}
-
-input{
-    width: 260px;
-    height: 30px;
-    border-radius: 5px;
-    border: solid;
-    border-color:  rgb(185, 185, 185);
-    border-width: 1px 1px 1px 1px;
-    outline: none;
-}
-
-.box-2,.box-3,.box-4{
-    margin-top: 10px;
-}
-section{
-    border: 1px solid rgb(185, 185, 185);
-    height: 595px;
-    padding: 20px;
-}
-
-
-
-.subtitulo-1{
-    font-size: 15px;
-    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
-    text-align: justify;
-    text-align: center;
-    color: #89878e;
-}
-
-.subtitulo-2{
-    font-size: 14px;
-    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
-    text-align: justify;
-    text-align: center;
-    color: #89878e;
-    font-weight: 100;
-}
-
-.subtitulo-3{
-    font-size: 12px;
-    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
-    text-align: justify;
-    text-align: center;
-    color: #89878e;
-    font-weight: 100;
-}
-.botao-1{
-    background-color: #289cf5;
-    width: 260px;
-    border-radius: 9px;
-    color: white;
-    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
-    border: solid;
-    height: 30px;
-    cursor: pointer;
-    font-size: 15px;
-}
-
-.botao-1:hover{
-    background-color: #007fe0;
-}
-
-h4{
-    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
-    color: #89878e;
-    font-weight: 100;
-}
-
-a{
-    color: #005291;
-}
-
-.botao-2{
-    background-color: #4cb5f9;
-    width: 260px;
-    border-radius: 9px;
-    color: white;
-    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
-    border: solid;
-    height: 35px;
+button{
+    border: 1px solid #590202 ;
+    background-color: #8C694A;
+    padding: 10px;
+    color: #260101;
     cursor: pointer;
 }
 
-.logo-facebook{
-    width: 25px;
-    position: relative;
-    top: 2px;
+.modo-escuro{
+    background-color:black;
+    border: 1px solid white;
+    color: white;
 }
